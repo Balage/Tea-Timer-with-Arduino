@@ -12,5 +12,10 @@ The full article is coming soon.
 - Download the repository and copy the entire **"Tea_Timer_Tiny85"** folder to there.
 - Start the Arduino IDE and select **"File"**, **"Sketches"**, and then choose **"Tea_Timer_Tiny85"** from the list.
 
+## Photo Gallery
+Here's my final implementation with box and everything.
+[![Gallery1](media/tea_timer_1_t.jpg)](media/tea_timer_1.jpg)
+[![Gallery1](media/tea_timer_2_t.jpg)](media/tea_timer_2.jpg) [![Gallery1](media/tea_timer_3_t.jpg)](media/tea_timer_3.jpg)
+
 ## License
 MIT

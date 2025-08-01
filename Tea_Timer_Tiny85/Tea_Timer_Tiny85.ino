@@ -34,31 +34,42 @@
 #define IO_BTN_DEC A1
 #define IO_BTN_INC A2
 
-// LED PINS
+// LED LOOK-UP-TABLE
 // This is the relation between the output pins on the SN74HC595 and the LEDs.
 // Each element sets which LEDs should be lit when the counter is at a certain number.
 // One pin is used for the enable feedback, and should always be zero! (in this case that is the least significant bit)
+//
+// The LED index layout is as follows:
+// |  1 |  2 |  3 |  4 |  5 |
+// |  6 |  7 |  8 |  9 | 10 |
+// | 11 | 12 | 13 | 14 | 15 |
+//
 #define UInt16(hi, lo) ((uint16_t)(hi << 8) | lo)
 uint16_t dispMinutesLut[] =
 {
     (uint16_t)0, // 0
     UInt16(B00000000, B00000010), // 1
     UInt16(B00000000, B00000110), // 2
-    UInt16(B00000000, B00100110), // 3
-    UInt16(B00000000, B01100110), // 4
-    UInt16(B00000000, B11100110), // 5
-    UInt16(B00000001, B11100110), // 6
-    UInt16(B00000001, B11101110), // 7
-    UInt16(B00001001, B11101110), // 8
-    UInt16(B00001101, B11101110), // 9
-    UInt16(B00001101, B11111110), // 10
-    UInt16(B10001101, B11111110), // 11
-    UInt16(B11001101, B11111110), // 12
-    UInt16(B11101101, B11111110), // 13
-    UInt16(B11111101, B11111110), // 14
+    UInt16(B00000000, B00001110), // 3
+    UInt16(B00000000, B00011110), // 4
+    UInt16(B00000000, B00111110), // 5
+    UInt16(B00000000, B01111110), // 6
+    UInt16(B00000000, B11111110), // 7
+    UInt16(B00000001, B11111110), // 8
+    UInt16(B00000011, B11111110), // 9
+    UInt16(B00000111, B11111110), // 10
+    UInt16(B00001111, B11111110), // 11
+    UInt16(B00011111, B11111110), // 12
+    UInt16(B00111111, B11111110), // 13
+    UInt16(B01111111, B11111110), // 14
     UInt16(B11111111, B11111110), // 15
 };
-uint16_t dispFlash  = UInt16(B01110001, B11110110);
+
+// The pattern that shows when the timer is beeping. It's a mug :D
+// | O O O O O |
+// | O       O |
+// |   O O O   |
+uint16_t dispFlash  = UInt16(B01110100, B01111110);
 
 // Milliseconds in one minute. Change it to calibrate for internal clock.
 #define ONE_MINUTE 60000L
