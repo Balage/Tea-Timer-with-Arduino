@@ -38,11 +38,12 @@ For info on how to set up the chip's fuses, look at the beginning of the Arduino
 ## Photo Gallery
 Here's my final implementation with box and everything.
 
-[![Gallery1](media/thumb/tea_timer_1_t.jpg)](media/tea_timer_1.jpg)
-[![Gallery1](media/thumb/tea_timer_2_t.jpg)](media/tea_timer_2.jpg)
-[![Gallery1](media/thumb/tea_timer_3_t.jpg)](media/tea_timer_3.jpg)
-[![Gallery1](media/thumb/tea_timer_4_t.jpg)](media/tea_timer_4.jpg)
-[![Gallery1](media/thumb/tea_timer_5_t.jpg)](media/tea_timer_5.jpg)
+[![Gallery1](media/thumb/tea_timer_beep_t.jpg)](media/tea_timer_beep.mp4)
+[![Gallery2](media/thumb/tea_timer_1_t.jpg)](media/tea_timer_1.jpg)
+[![Gallery3](media/thumb/tea_timer_2_t.jpg)](media/tea_timer_2.jpg)
+[![Gallery4](media/thumb/tea_timer_3_t.jpg)](media/tea_timer_3.jpg)
+[![Gallery5](media/thumb/tea_timer_4_t.jpg)](media/tea_timer_4.jpg)
+[![Gallery6](media/thumb/tea_timer_5_t.jpg)](media/tea_timer_5.jpg)
 
 It started as a test on a breadboard, and then I built it on a prototype board so I can test its usability in a real-life scenario. It went through several battery configurations before I settled on two AAA batteries.
 
